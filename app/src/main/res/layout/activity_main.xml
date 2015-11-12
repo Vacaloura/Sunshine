@@ -3,9 +3,83 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/blanco"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
 
-    <TextView android:text="@string/hello_world" android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Titulo"
+        android:textColor="@color/azul"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/imagen_gato"
+        android:layout_marginTop="10dp"
+        android:id="@+id/titulo"
+        />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/gato"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/imagen_gato"
+
+        />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/titulo"
+        android:id="@+id/et1"
+        android:background="@color/gris"
+        android:hint="@string/nombre"
+        android:layout_marginTop="15dp"
+
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/et1"
+        android:id="@+id/et2"
+        android:background="@color/gris"
+        android:hint="@string/contraseña"
+        android:layout_marginTop="15dp"
+        android:inputType="textPassword"
+
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/et2"
+        android:id="@+id/et3"
+        android:background="@color/gris"
+        android:hint="@string/repetir"
+        android:layout_marginTop="15dp"
+
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/azul"
+        android:text="@string/enviar"
+        android:textColor="@color/blanco"
+        android:textSize="20sp"
+        android:id="@+id/boton_magico"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:visibility="visible"
+        android:layout_marginBottom="15dp"
+        />
+
 
 </RelativeLayout>
+
