@@ -7,6 +7,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -22,6 +23,8 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+        TextView aux = (TextView) findViewById(R.id.tv_aux);
+        aux.setText(cadena);
     }
 
     @Override
